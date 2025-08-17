@@ -4,6 +4,8 @@ let app = express();
 
 app.use(express.json());
 //Adding a log to check if my reposity is getting updated or not.
+//Changed some code to check the pull requiest
+
 app.get('/api/data',(req,res)=>{
     console.log(req.body);
     res.json({name : req.body.name, surename : req.body.titte});
